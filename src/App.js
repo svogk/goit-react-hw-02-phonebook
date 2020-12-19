@@ -11,9 +11,9 @@ class App extends Component {
     filter: '',
   };
 
-  handleAddNewContact = nameContact =>
+  handleAddNewContact = newContact =>
     this.setState(({ contacts }) => ({
-      contacts: [...contacts, nameContact],
+      contacts: [...contacts, newContact],
     }));
 
   handleCheckContact = name => {

@@ -14,8 +14,8 @@ class ContactForm extends Component {
     onCheckContact: PropTypes.func,
   };
 
-  handleChange = event => {
-    const { name, value } = event.currentTarget;
+  handleChange = ({ target }) => {
+    const { name, value } = target;
     this.setState({ [name]: value });
   };
 
